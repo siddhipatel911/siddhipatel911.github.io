@@ -423,18 +423,18 @@
             <div class="proj-name">Student Grades</div>
             <div class="proj-stack">Java / Swing</div>
           </div>
-          <p class="proj-desc">Grade calculator GUI. Enter student scores, auto-calc the average, assign a letter grade, and display everything in a live-updating table.</p>
+          <p class="proj-desc">Grade calculator GUI that stores students and four course marks in a <strong>resizable 2D array</strong>. Add/list records, compute a specific student’s average, and compute course averages across the class — all printed to an on-screen text area.</p>
           <ul class="proj-list">
-            <li><span class="bullet">•</span><span>Validates numeric input; rejects impossible marks.</span></li>
-            <li><span class="bullet">•</span><span>Uses <strong>DefaultTableModel</strong> to insert rows on the fly.</span></li>
-            <li><span class="bullet">•</span><span>Generates letter grades (A–F) from numeric averages.</span></li>
+            <li><span class="bullet">•</span><span>Uses dynamic <strong>String[][]</strong> growth (copy-append) to store First, Last, and marks for 4 courses.</span></li>
+            <li><span class="bullet">•</span><span>Buttons: <em>Add</em>, <em>List</em>, <em>Student Average</em>, <em>Course Average</em>, <em>Exit</em>; outputs are formatted in a text area.</span></li>
+            <li><span class="bullet">•</span><span>Parses numeric input and formats averages to two decimals.</span></li>
           </ul>
           <div class="proj-footer">
             <a class="repo-link" href="https://github.com/siddhipatel911/StudentGrades" target="_blank" rel="noopener">View Repository →</a>
             <div class="mini-badges">
-              <div class="mini-badge">Data Validation</div>
-              <div class="mini-badge">Tables / Models</div>
-              <div class="mini-badge">User Workflow</div>
+              <div class="mini-badge">2D Arrays</div>
+              <div class="mini-badge">Data Structures</div>
+              <div class="mini-badge">Swing Events</div>
             </div>
           </div>
         </article>
