@@ -315,6 +315,41 @@
       color: #475569;
       margin-top: 2rem;
     }
+
+    /* ---------- About / Resume layouts ---------- */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    @media (min-width: 768px){
+      .two-col {
+        grid-template-columns: 1.2fr 1fr;
+      }
+    }
+
+    .resume-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      display: grid;
+      gap: .35rem;
+      font-size: .8rem;
+      color: #cbd5e1;
+    }
+
+    .resume-list li::before {
+      content: "• ";
+      color: #38bdf8;
+      font-weight: 700;
+    }
+
+    .small-muted {
+      font-size: .75rem;
+      color: #94a3b8;
+      margin-top: .2rem;
+    }
   </style>
 </head>
 <body>
@@ -328,7 +363,7 @@
           <p class="role">First-year Computer Engineering student @ University of Waterloo. I like building interactive tools and games in Java Swing and Python that actually do something real.</p>
         </div>
         <div class="contact">
-          <div><strong>Email:</strong> <a href="mailto:YOUR.EMAIL@HERE">siddhi.patel9111@gmail.com</a></div>
+          <div><strong>Email:</strong> <a href="mailto:siddhi.patel9111@gmail.com">siddhi.patel9111@gmail.com</a></div>
           <div><strong>GitHub:</strong> <a href="https://github.com/siddhipatel911" target="_blank" rel="noopener">siddhipatel911</a></div>
           <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/siddhi-patel-97a626382" target="_blank" rel="noopener">linkedin.com/in/siddhi-patel-97a626382</a></div>
         </div>
@@ -342,6 +377,36 @@
         <span class="tag">Problem Solving</span>
       </div>
     </header>
+
+    <!-- ================= ABOUT ME ================= -->
+    <section class="card">
+      <div class="section-title">
+        <span>About Me</span>
+      </div>
+      <div class="two-col">
+        <div>
+          <p class="proj-desc" style="min-height:auto;">
+            I’m a first-year Computer Engineering student at the University of Waterloo who enjoys turning ideas into
+            interactive tools and games. I’ve worked with Java, Python, and C++ in both coursework and personal projects,
+            with a strong focus on object-oriented and event-driven programming.
+          </p>
+          <p class="proj-desc" style="min-height:auto;">
+            Outside of code, I have hands-on experience in tutoring, retail operations, and community event coordination.
+            I’m comfortable taking ownership of tasks, learning new tools quickly, and contributing wherever I’m needed.
+          </p>
+        </div>
+        <div>
+          <p class="section-hint" style="margin-bottom:.4rem;">Summary of qualifications</p>
+          <ul class="resume-list">
+            <li>Strong research, leadership, and problem-solving skills applied in both academic and professional settings.</li>
+            <li>Detail-oriented with the ability to quickly learn and adapt to new tools, frameworks, and concepts.</li>
+            <li>Hands-on experience applying technology solutions in both retail operations and education support roles.</li>
+            <li>Designed and developed interactive applications in Java, Python, and C++ using OOP and event-driven principles.</li>
+            <li>Entrepreneurial background with the initiative to identify opportunities, propose improvements, and deliver innovative solutions.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <!-- ================= PROJECTS ================= -->
     <section>
@@ -461,6 +526,58 @@
           </div>
         </article>
 
+      </div>
+    </section>
+
+    <!-- ================= RESUME HIGHLIGHTS ================= -->
+    <section class="card">
+      <div class="section-title">
+        <span>Resume Highlights</span>
+        <span class="section-hint">Condensed view of experience & awards</span>
+      </div>
+
+      <div class="two-col">
+        <!-- Experience -->
+        <div>
+          <h4 class="section-hint" style="margin-bottom:.4rem;">Experience</h4>
+          <ul class="resume-list">
+            <li>
+              Tutoring Assistant — Kumon Math and Reading Centre of Chatham
+              <div class="small-muted">Delivered personalized math and reading support, adapted instruction based on progress data, and helped students build confidence.</div>
+            </li>
+            <li>
+              Store Manager — Ann’s Convenience and Video
+              <div class="small-muted">Managed daily operations, cash handling, and Excel-based sales tracking while ensuring reliable inventory and customer service.</div>
+            </li>
+            <li>
+              Tutoring Assistant — Learning Disabilities Association CK
+              <div class="small-muted">Designed accessible learning plans, integrated assistive technologies, and collaborated with educators to support diverse learners.</div>
+            </li>
+            <li>
+              Events Coordinator — Chatham Hindu Cultural Society
+              <div class="small-muted">Planned and ran community events, set up AV systems, and led youth-focused cultural and educational programs.</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Education & Awards -->
+        <div>
+          <h4 class="section-hint" style="margin-bottom:.4rem;">Education</h4>
+          <ul class="resume-list" style="margin-bottom:.75rem;">
+            <li>
+              BASc, Computer Engineering — University of Waterloo
+              <div class="small-muted">September 2025 – May 2030 (Co-op program).</div>
+            </li>
+          </ul>
+
+          <h4 class="section-hint" style="margin-bottom:.4rem;">Awards</h4>
+          <ul class="resume-list">
+            <li>Governor General’s Academic Medal — awarded for top overall grades at Chatham-Kent Secondary School.</li>
+            <li>PEO Chatham-Kent Chapter Scholarship — scholarship from Professional Engineers of Ontario.</li>
+            <li>CKSS Schulich Leader Scholarship Nominee — selected as school nominee.</li>
+            <li>1st Place — LKDSB / University of Waterloo Team Math Competition.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
