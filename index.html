@@ -1115,6 +1115,32 @@
       </div>
     </section>
 
+    <!-- 7 -->
+    <article class="proj" data-tags="python opengl 3d graphics rubiks cube solver kociemba nxt robot bluetooth serial animation visualization">
+      <div class="projTop">
+        <h3 class="projName">3D Rubik’s Cube Solver & NXT Controller</h3>
+        <span class="stack"><i></i>Python / OpenGL</span>
+      </div>
+      <p class="projDesc">
+        Interactive 3D Rubik’s Cube solver with OpenGL visualization and optional LEGO Mindstorms NXT robot integration.
+      </p>
+      <ul class="bullets">
+        <li><span class="bDot"></span><span>3D cube rendering with rotation + manual sticker painting.</span></li>
+        <li><span class="bDot"></span><span>Kociemba algorithm for near-optimal solving + animated playback.</span></li>
+      </ul>
+      <div class="projFoot">
+        <div class="badges">
+          <span class="badge">3D Graphics</span>
+          <span class="badge">Algorithms</span>
+          <span class="badge">Robotics</span>
+        </div>
+        <div>
+          <a class="link" href="https://github.com/siddhipatel911/cube-solver" target="_blank" rel="noopener">Repo ↗</a>
+          <button class="link" type="button" data-open="6" style="margin-left:8px;">Details</button>
+        </div>
+      </div>
+    </article>
+
     <!-- RESUME -->
     <section class="card" id="resume">
       <div class="section">
@@ -1350,6 +1376,20 @@
           "Handles multiple teams in one run."
         ],
         badges: ["Python", "Logic / Rules", "Input Validation"]
+      }
+      {
+        title: "3D Rubik’s Cube Solver & NXT Controller",
+        stack: "Python / OpenGL",
+        repo: "https://github.com/siddhipatel911/cube-solver",
+        desc: "High-performance Rubik’s Cube solver featuring a 3D interactive interface and optional LEGO Mindstorms NXT robot integration. Users can input cube states manually or via robot scanning and visualize solutions step-by-step.",
+        points: [
+          "Fully interactive 3D cube rendered with OpenGL, supporting rotation and manual sticker painting.",
+          "Implements the Kociemba two-phase algorithm for near-optimal solving efficiency.",
+          "Animated move-by-move playback with smooth transitions and camera auto-orientation.",
+          "Bluetooth/serial integration with LEGO Mindstorms NXT using mailbox communication protocol.",
+          "Supports hybrid input via both 3D interface and Tkinter-based fallback GUI."
+        ],
+        badges: ["3D Graphics", "Algorithms", "Robotics", "OpenGL", "Python"]
       }
     ];
 
