@@ -274,25 +274,33 @@
 
     .kpis{
       display:grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
       margin-top: 10px;
     }
     .kpi{
       border: 1px solid rgba(148,163,184,.18);
       border-radius: 16px;
       background: rgba(15,23,42,.30);
-      padding: 12px 12px;
-      display:grid;
-      gap: 4px;
+      padding: 6px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      text-align: center;
     }
     .kpi strong{
-      font-size: 1.05rem;
-      letter-spacing: .2px;
+      font-size: .9rem;
+      letter-spacing: .1px;
     }
     .kpi span{
       color: var(--muted2);
-      font-size: .82rem;
+      font-size: .7rem;
+    }
+    .kpi .separator{
+      width: 1px;
+      height: 20px;
+      background: rgba(148,163,184,.25);
     }
 
     .contactCard{
@@ -799,6 +807,7 @@
       <div class="navlinks">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#workingon">Current</a>
         <a href="#resume">Resume</a>
         <a href="#skills">Skills</a>
       </div>
@@ -840,9 +849,10 @@
           </div>
 
           <div class="kpis" aria-label="Quick stats">
-            <div class="kpi"><strong>7</strong><span>Projects showcased</span></div>
-            <div class="kpi"><strong>Full-stack</strong><span>Software + data systems</span></div>
+            <div class="kpi"><strong>7</strong><span>Projects</span></div>
+            <div class="kpi"><strong>Full-stack</strong><span>Software + data</span></div>
             <div class="kpi"><strong>Embedded + AI</strong><span>Build focus</span></div>
+            <div class="kpi"><strong>Hardware + PCB</strong><span>Design focus</span></div>
           </div>
         </div>
 
@@ -875,7 +885,7 @@
             <span aria-hidden="true">⚡</span>
             <div>
               <div><strong>Currently into</strong></div>
-              <small>Games, tools, and clean UI patterns</small>
+              <small>System design, AI tools, robotics, and embedded systems</small>
             </div>
           </div>
         </aside>
@@ -927,6 +937,7 @@
             </li>
           </ul>
         </div>
+      </div>
       </div>
     </section>
 
@@ -1108,7 +1119,7 @@
 
           <article class="proj" data-tags="python opengl 3d graphics rubiks cube solver kociemba nxt robot bluetooth serial animation visualization algorithms robotics">
             <div class="projTop">
-              <h3 class="projName">3D Rubik’s Cube Solver & NXT Controller</h3>
+              <h3 class="projName">Rubik’s Cube Solver</h3>
               <span class="stack"><i></i>Python / OpenGL</span>
             </div>
             <p class="projDesc">
@@ -1134,12 +1145,61 @@
       </div>
     </section>
 
+    <!-- CURRENTLY WORKING ON -->
+    <section class="card" id="workingon">
+      <div class="section">
+        <div class="sectionhead">
+          <h2>Currently Working On</h2>
+          <div class="hint">Active projects & skills in development</div>
+        </div>
+
+        <div class="twocol">
+          <div class="textBlock">
+            <p>
+              Building out new projects and expanding into hardware design using PCB tools while deepening full-stack development skills.
+            </p>
+            <p>
+              Working on personal projects and lab certifications to strengthen both software and hardware foundations.
+            </p>
+          </div>
+
+          <ul class="list">
+            <li class="li">
+              <strong>Personal Portfolio Site</strong>
+              <span>Full-stack site built with Next.js and React, featuring interactive UI, project showcase, and resume integration.</span>
+            </li>
+            <li class="li">
+              <strong>Smart Motion Detector & Security System</strong>
+              <span>ESP32-based system with motion detection, alerts, and security features.</span>
+            </li>
+            <li class="li">
+              <strong>PCB Design Projects</strong>
+              <span>Redesigning Cognitive Delirium Memory Game hardware and building custom PCB layouts.</span>
+            </li>
+            <li class="li">
+              <strong>Student Lab PCB Design</strong>
+              <span>Working through PCB design curriculum and earning certification.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pillRow">
+          <span class="pill"><span class="spark"></span>Next.js</span>
+          <span class="pill"><span class="spark"></span>React</span>
+          <span class="pill"><span class="spark"></span>ESP32</span>
+          <span class="pill"><span class="spark"></span>Altium</span>
+          <span class="pill"><span class="spark"></span>KiCad</span>
+          <span class="pill"><span class="spark"></span>PCB Design</span>
+        </div>
+      </div>
+    </section>
+
     <!-- RESUME -->
     <section class="card" id="resume">
       <div class="section">
         <div class="sectionhead">
           <h2>Resume Highlights</h2>
-          <div class="hint">Updated experience, education, and awards</div>
+          <div class="hint">My experience, education, and awards</div>
         </div>
 
         <div class="twocol">
@@ -1207,27 +1267,26 @@
       <div class="section">
         <div class="sectionhead">
           <h2>Skills</h2>
-          <div class="hint">Updated from resume</div>
+          <div class="hint">Technical Skills in both Hardware and Software</div>
         </div>
 
-        <div class="skillGrid">
+<div class="skillGrid">
           <div class="skillCard">
             <h3>Programming Languages</h3>
             <ul>
               <li><span class="mini"></span>Python</li>
-              <li><span class="mini"></span>C++</li>
               <li><span class="mini"></span>Java</li>
+              <li><span class="mini"></span>C++</li>
               <li><span class="mini"></span>JavaScript</li>
               <li><span class="mini"></span>SQL</li>
               <li><span class="mini"></span>HTML</li>
               <li><span class="mini"></span>CSS</li>
-              <li><span class="mini"></span>Ruby</li>
               <li><span class="mini"></span>React</li>
             </ul>
           </div>
 
           <div class="skillCard">
-            <h3>Tools & Frameworks</h3>
+            <h3>Tools &amp; Frameworks</h3>
             <ul>
               <li><span class="mini"></span>GitHub</li>
               <li><span class="mini"></span>Docker</li>
@@ -1238,23 +1297,49 @@
               <li><span class="mini"></span>cURL</li>
               <li><span class="mini"></span>NetBeans</li>
               <li><span class="mini"></span>Visual Studio Code</li>
-              <li><span class="mini"></span>Arduino</li>
             </ul>
           </div>
 
           <div class="skillCard">
-            <h3>AI, Data & Development</h3>
+            <h3>AI &amp; Data Technologies</h3>
             <ul>
               <li><span class="mini"></span>ChatGPT API</li>
               <li><span class="mini"></span>Google Gemini</li>
               <li><span class="mini"></span>Vertex AI</li>
-              <li><span class="mini"></span>Embeddings & Vector Databases</li>
-              <li><span class="mini"></span>MCP Servers & AI Memory Systems</li>
+              <li><span class="mini"></span>Embeddings</li>
+              <li><span class="mini"></span>Vector Databases</li>
+              <li><span class="mini"></span>MCP Servers</li>
+              <li><span class="mini"></span>AI Memory Systems</li>
               <li><span class="mini"></span>Prompt Engineering</li>
-              <li><span class="mini"></span>Web Scraping & Data Pipelines</li>
-              <li><span class="mini"></span>Database Design & SQL Optimization</li>
-              <li><span class="mini"></span>UI/UX Design & State Management</li>
-              <li><span class="mini"></span>Full-Stack Development</li>
+            </ul>
+          </div>
+
+          <div class="skillCard">
+            <h3>Backend &amp; Data Engineering</h3>
+            <ul>
+              <li><span class="mini"></span>Web Scraping</li>
+              <li><span class="mini"></span>Data Pipelines</li>
+              <li><span class="mini"></span>Incremental Scraping</li>
+              <li><span class="mini"></span>API Development</li>
+              <li><span class="mini"></span>Database Design</li>
+              <li><span class="mini"></span>SQL (tables, indexes, functions)</li>
+              <li><span class="mini"></span>Debugging &amp; Optimization</li>
+            </ul>
+          </div>
+
+          <div class="skillCard">
+            <h3>Hardware &amp; Embedded Tools</h3>
+            <ul>
+              <li><span class="mini"></span>Arduino</li>
+              <li><span class="mini"></span>ESP32</li>
+              <li><span class="mini"></span>LEGO Mindstorms NXT</li>
+              <li><span class="mini"></span>Sensors</li>
+              <li><span class="mini"></span>Servo Motors</li>
+              <li><span class="mini"></span>Hardware Testing</li>
+              <li><span class="mini"></span>KiCad</li>
+              <li><span class="mini"></span>Altium Designer</li>
+              <li><span class="mini"></span>Embedded Systems</li>
+              <li><span class="mini"></span>PCB Design</li>
             </ul>
           </div>
         </div>
@@ -1262,7 +1347,7 @@
     </section>
 
     <footer>
-      Designed & built by Siddhi Patel • 2026
+      Designed & built by Siddhi Patel • 2025
     </footer>
   </main>
 
