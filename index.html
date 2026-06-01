@@ -819,10 +819,10 @@
     <section class="card hero" id="top">
       <div class="heroGrid">
         <div class="headline">
-          <h1>Building interactive tools & games that actually do something real.</h1>
+          <h1>Building interactive software, robotics & AI tools that actually do something real.</h1>
           <p class="subline">
             Computer Engineering student @ the University of Waterloo building interactive software, embedded systems,
-            AI-powered tools, and clean UI experiences across Java, Python, C++, and full-stack workflows.
+            computer vision projects, AI-powered tools, and clean UI experiences across Python, Java, C++, and full-stack workflows.
           </p>
 
           <div class="ctaRow">
@@ -840,6 +840,9 @@
           <div class="pillRow" aria-label="Top skills">
             <span class="pill"><span class="spark"></span> Java Swing</span>
             <span class="pill"><span class="spark"></span> Python</span>
+            <span class="pill"><span class="spark"></span> OpenCV</span>
+            <span class="pill"><span class="spark"></span> MediaPipe</span>
+            <span class="pill"><span class="spark"></span> Robotics</span>
             <span class="pill"><span class="spark"></span> C++</span>
             <span class="pill"><span class="spark"></span> SQL</span>
             <span class="pill"><span class="spark"></span> React</span>
@@ -849,9 +852,9 @@
           </div>
 
           <div class="kpis" aria-label="Quick stats">
-            <div class="kpi"><strong>7</strong><span>Projects</span></div>
+            <div class="kpi"><strong>8</strong><span>Projects</span></div>
             <div class="kpi"><strong>Full-stack</strong><span>Software + data</span></div>
-            <div class="kpi"><strong>Embedded + AI</strong><span>Build focus</span></div>
+            <div class="kpi"><strong>Robotics + CV</strong><span>System focus</span></div>
             <div class="kpi"><strong>Hardware + PCB</strong><span>Design focus</span></div>
           </div>
         </div>
@@ -885,7 +888,7 @@
             <span aria-hidden="true">⚡</span>
             <div>
               <div><strong>Currently into</strong></div>
-              <small>System design, AI tools, robotics, and embedded systems</small>
+              <small>Robotics, computer vision, AI tools, and embedded systems</small>
             </div>
           </div>
         </aside>
@@ -904,7 +907,7 @@
           <div class="textBlock">
             <p>
               I’m a Computer Engineering student at the University of Waterloo who enjoys building practical, interactive, and well-designed projects. 
-              My work spans Java and Python applications, embedded systems, and more recently 
+              My work spans Java and Python applications, embedded systems, robotics, computer vision, and more recently 
               full-stack and AI-integrated tools using APIs, databases, and cloud platforms.
             </p>
             <p>
@@ -925,8 +928,8 @@
               <span>Builds Java, Python, and web projects with strong logic, structure, and usability.</span>
             </li>
             <li class="li">
-              <strong>Embedded + hardware experience</strong>
-              <span>Worked with Arduino-based systems, sensors, buttons, motors, and testing workflows.</span>
+              <strong>Robotics + embedded experience</strong>
+              <span>Worked with Arduino systems, sensors, buttons, motors, Dobot Magician control, computer vision, and testing workflows.</span>
             </li>
             <li class="li">
               <strong>AI and backend exposure</strong>
@@ -960,11 +963,12 @@
               <path d="M10.5 18.5a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z" stroke="currentColor" stroke-width="2" opacity=".9"/>
               <path d="M16.8 16.8 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".9"/>
             </svg>
-            <input class="search" id="search" type="search" placeholder="Search projects (e.g., Swing, Arduino, SQL, API, OpenGL, logic)..." />
+            <input class="search" id="search" type="search" placeholder="Search projects (e.g., robotics, OpenCV, Arduino, SQL, API, OpenGL, logic)..." />
           </div>
 
           <div class="filterRow" aria-label="Filters">
             <button class="chip active" data-filter="all" type="button">All</button>
+            <button class="chip" data-filter="robotics" type="button">Robotics/CV</button>
             <button class="chip" data-filter="java" type="button">Java/Swing</button>
             <button class="chip" data-filter="python" type="button">Python</button>
             <button class="chip" data-filter="arduino" type="button">Arduino/C++</button>
@@ -972,6 +976,31 @@
         </div>
 
         <div class="grid" id="projectGrid">
+          <article class="proj" data-tags="python robotics computer vision opencv mediapipe flask dobot magician aruco homography calibration camera pick and place hand safety collaborative robot manufacturing ui json state machine">
+            <div class="projTop">
+              <h3 class="projName">Collaborative Robotic Arm</h3>
+              <span class="stack"><i></i>Python / CV</span>
+            </div>
+            <p class="projDesc">
+              Camera-guided Dobot Magician system that detects objects, checks hand safety, and performs human-aware pick-and-place tasks.
+            </p>
+            <ul class="bullets">
+              <li><span class="bDot"></span><span>Uses OpenCV, ArUco calibration, and homography mapping to convert camera detections into robot coordinates.</span></li>
+              <li><span class="bDot"></span><span>Blocks robot motion with MediaPipe hand detection and shows live status through OpenCV overlays and a Flask UI preview.</span></li>
+            </ul>
+            <div class="projFoot">
+              <div class="badges">
+                <span class="badge">Robotics</span>
+                <span class="badge">OpenCV</span>
+                <span class="badge">Safety</span>
+              </div>
+              <div>
+                <a class="link" href="https://github.com/siddhipatel911/Collaborative_Robot" target="_blank" rel="noopener">Repo ↗</a>
+                <button class="link" type="button" data-open="0" style="margin-left:8px;">Details</button>
+              </div>
+            </div>
+          </article>
+
           <article class="proj" data-tags="arduino c++ embedded systems arduino uno r4 millis non-blocking leds motor buttons serial monitoring delirium memory game">
             <div class="projTop">
               <h3 class="projName">Delirium Memory Game</h3>
@@ -992,7 +1021,7 @@
               </div>
               <div>
                 <a class="link" href="https://github.com/siddhipatel911/Delirium-Memory-Game" target="_blank" rel="noopener">Repo ↗</a>
-                <button class="link" type="button" data-open="0" style="margin-left:8px;">Details</button>
+                <button class="link" type="button" data-open="1" style="margin-left:8px;">Details</button>
               </div>
             </div>
           </article>
@@ -1017,7 +1046,7 @@
               </div>
               <div>
                 <a class="link" href="https://github.com/siddhipatel911/SoccerPenaltiesGame" target="_blank" rel="noopener">Repo ↗</a>
-                <button class="link" type="button" data-open="1" style="margin-left:8px;">Details</button>
+                <button class="link" type="button" data-open="2" style="margin-left:8px;">Details</button>
               </div>
             </div>
           </article>
@@ -1042,7 +1071,7 @@
               </div>
               <div>
                 <a class="link" href="https://github.com/siddhipatel911/TicTacToe-5x5" target="_blank" rel="noopener">Repo ↗</a>
-                <button class="link" type="button" data-open="2" style="margin-left:8px;">Details</button>
+                <button class="link" type="button" data-open="3" style="margin-left:8px;">Details</button>
               </div>
             </div>
           </article>
@@ -1067,7 +1096,7 @@
               </div>
               <div>
                 <a class="link" href="https://github.com/siddhipatel911/MemoryCardMatchingGame" target="_blank" rel="noopener">Repo ↗</a>
-                <button class="link" type="button" data-open="3" style="margin-left:8px;">Details</button>
+                <button class="link" type="button" data-open="4" style="margin-left:8px;">Details</button>
               </div>
             </div>
           </article>
@@ -1092,7 +1121,7 @@
               </div>
               <div>
                 <a class="link" href="https://github.com/siddhipatel911/StudentGrades" target="_blank" rel="noopener">Repo ↗</a>
-                <button class="link" type="button" data-open="4" style="margin-left:8px;">Details</button>
+                <button class="link" type="button" data-open="5" style="margin-left:8px;">Details</button>
               </div>
             </div>
           </article>
@@ -1117,7 +1146,7 @@
               </div>
               <div>
                 <a class="link" href="https://github.com/siddhipatel911/Team-Division-Placement" target="_blank" rel="noopener">Repo ↗</a>
-                <button class="link" type="button" data-open="5" style="margin-left:8px;">Details</button>
+                <button class="link" type="button" data-open="6" style="margin-left:8px;">Details</button>
               </div>
             </div>
           </article>
@@ -1142,7 +1171,7 @@
               </div>
               <div>
                 <a class="link" href="https://github.com/siddhipatel911/cube-solver" target="_blank" rel="noopener">Repo ↗</a>
-                <button class="link" type="button" data-open="6" style="margin-left:8px;">Details</button>
+                <button class="link" type="button" data-open="7" style="margin-left:8px;">Details</button>
               </div>
             </div>
           </article>
@@ -1161,7 +1190,7 @@
         <div class="twocol">
           <div class="textBlock">
             <p>
-              Building out new projects and expanding into hardware design using PCB tools while deepening full-stack development skills.
+              Building out new projects across robotics, computer vision, embedded systems, and hardware design while deepening full-stack development skills.
             </p>
             <p>
               Working on personal projects and lab certifications to strengthen both software and hardware foundations.
@@ -1299,6 +1328,7 @@
               <li><span class="mini"></span>Google Cloud Platform</li>
               <li><span class="mini"></span>Cloud Run / Cloud Build / Cloud SQL</li>
               <li><span class="mini"></span>REST APIs</li>
+              <li><span class="mini"></span>Flask</li>
               <li><span class="mini"></span>cURL</li>
               <li><span class="mini"></span>NetBeans</li>
               <li><span class="mini"></span>Visual Studio Code</li>
@@ -1333,8 +1363,13 @@
           </div>
 
           <div class="skillCard">
-            <h3>Hardware &amp; Embedded Tools</h3>
+            <h3>Robotics, CV &amp; Embedded Tools</h3>
             <ul>
+              <li><span class="mini"></span>OpenCV</li>
+              <li><span class="mini"></span>MediaPipe</li>
+              <li><span class="mini"></span>ArUco Markers</li>
+              <li><span class="mini"></span>Homography Mapping</li>
+              <li><span class="mini"></span>Dobot Magician</li>
               <li><span class="mini"></span>Arduino</li>
               <li><span class="mini"></span>ESP32</li>
               <li><span class="mini"></span>LEGO Mindstorms NXT</li>
@@ -1345,6 +1380,7 @@
               <li><span class="mini"></span>Altium Designer</li>
               <li><span class="mini"></span>Embedded Systems</li>
               <li><span class="mini"></span>PCB Design</li>
+              <li><span class="mini"></span>Camera Calibration</li>
             </ul>
           </div>
         </div>
@@ -1352,7 +1388,7 @@
     </section>
 
     <footer>
-      Designed & built by Siddhi Patel • 2025
+      Designed & built by Siddhi Patel • 2026
     </footer>
   </main>
 
@@ -1404,6 +1440,18 @@
     // Project data for modal
     // =======================
     const projects = [
+      {
+        title: "Collaborative Robotic Arm",
+        stack: "Python / OpenCV / MediaPipe / Flask",
+        repo: "https://github.com/siddhipatel911/Collaborative_Robot",
+        desc: "Camera-guided collaborative robot demo that turns a Dobot Magician robotic arm into a human-aware pick-and-place partner for a shared workspace.",
+        points: [
+          "Uses OpenCV object detection, ArUco calibration, and homography mapping to convert overhead camera detections into Dobot XY coordinates.",
+          "Implements MediaPipe hand landmark detection so robot movement is blocked when a human hand enters the active placement zone.",
+          "Includes configurable JSON drop zones, live OpenCV overlays, Flask UI preview, and test scripts for camera, robot movement, picking, hand safety, and movement experiments."
+        ],
+        badges: ["Robotics", "Computer Vision", "Safety", "OpenCV", "MediaPipe"]
+      },
       {
         title: "Delirium Memory Game",
         stack: "Arduino / C++",
@@ -1507,6 +1555,7 @@
         const matchesSearch = !q || tags.includes(q);
 
         const matchesFilter = (activeFilter === 'all')
+          || (activeFilter === 'robotics' && (tags.includes('robotics') || tags.includes('computer vision') || tags.includes('opencv') || tags.includes('dobot')))
           || (activeFilter === 'java' && tags.includes('java'))
           || (activeFilter === 'python' && tags.includes('python'))
           || (activeFilter === 'arduino' && (tags.includes('arduino') || tags.includes('embedded')));
@@ -1598,4 +1647,3 @@
   </script>
 </body>
 </html>
-
